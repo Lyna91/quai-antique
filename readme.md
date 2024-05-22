@@ -6,3 +6,4 @@ Ce site est un site vitrine du restaurant le quai antique
 # deploiement
 
 # autres instructions
+coucou
