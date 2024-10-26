@@ -7,10 +7,10 @@ html {
 }
 
 
+
 footer.footer {
     padding: 15px;
     position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
@@ -44,4 +44,8 @@ p {
         align-items: center;
         justify-content: center;
     }
+}
+
+.text-justify {
+    text-align: justify;
 }
