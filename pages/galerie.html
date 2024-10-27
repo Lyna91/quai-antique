@@ -5,11 +5,18 @@
 </div>
 
 <div class="container">
+<div class="text-center">
+    <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editionPhotoModal">Ajouter une photo</button>
+</div>
     <div class="row row-cols-2 row-cols-lg-3">
         <div class="col p-3">
             <div class="image-card text-white">
                 <img src="/image/food-5282718_1920.jpg" class="rounded w-100">
                 <p class="titre-image tex-white">Titre</p>
+                <div class="action-image-button">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
             </div>
         </div>
         <div class="col p-3">
@@ -43,4 +50,55 @@
             </div>
         </div>
     </div>
-</div>
+    <div class="text-center">
+        <a href="/reservation" class="btn btn-primary">Réserver</a>
+    </div>
+ <!--modal edition-->   
+<div class="modal fade" id="editionPhotoModal" tabindex="-1" aria-labelledby="editionPhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="editionPhotoModalLabel">Edition photo</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="NamePhotoInput" class="form-label">Votre photo</label>
+                  <input type="text" class="form-control" id="NamePhotoInput" placeholder="Lasagnes">
+                </div>
+                <div class="mb-3">
+                  <label for="ImageInput" class="form-label">Image</label>
+                  <input type="file" class="form-control" id="ImageInput">
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary">Enregistrer</button>
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!--modal suppression-->   
+<div class="modal fade" id="deletePhotoModal" tabindex="-1" aria-labelledby="deletePhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="deletePhotoModalLabel">Supprimer la photo ?</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <p>Votre photo</p>
+                  <img src="/image/platter-2009590_1280.jpg" class="rounded w-100">
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-danger">supprimer</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Annuler</button>
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
