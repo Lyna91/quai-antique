@@ -11971,6 +11971,10 @@ html {
   min-height: 100%;
 }
 
+main {
+  margin-bottom: 150px;
+}
+
 footer.footer {
   padding: 15px;
   position: absolute;
