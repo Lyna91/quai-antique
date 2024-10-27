@@ -3,6 +3,6 @@ export default class Route {
         this.url = url;
         this.title = title;
         this.pathHtml = pathHtml;
-        this.JS = pathJS;
+        this.pathJS = pathJS;
     }
 }
